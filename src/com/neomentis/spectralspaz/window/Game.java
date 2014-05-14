@@ -1,6 +1,7 @@
 package com.neomentis.spectralspaz.window;
 
 import java.awt.Canvas;
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 
@@ -103,6 +104,8 @@ public class Game extends Canvas implements Runnable
 		
 		//////////////////////////////////
 		
+		g.setColor(Color.black);
+		g.fillRect(0, 0, getWidth(), getHeight());
 		handler.render(g);
 		
 		//////////////////////////////////
